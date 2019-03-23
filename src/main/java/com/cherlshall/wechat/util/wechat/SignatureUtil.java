@@ -1,5 +1,7 @@
 package com.cherlshall.wechat.util.wechat;
 
+import com.cherlshall.wechat.config.WechatConfig;
+
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -11,7 +13,7 @@ public class SignatureUtil {
      * 验证签名
      */
     public static boolean check(String signature, String timestamp, String nonce) {
-        String[] arr = new String[] { WeChatConstant.TOKEN, timestamp, nonce };
+        String[] arr = new String[] { WechatConfig.TOKEN, timestamp, nonce };
         // 将token、timestamp、nonce三个参数进行字典序排序
         // Arrays.sort(arr);
         sort(arr);
