@@ -5,12 +5,6 @@ package com.cherlshall.wechat.util.wechat;
  */
 public class WeChatConstant {
     /**
-     * 认证信息 前往微信公众号管理页面获取 并填写
-     */
-    public static final String APP_ID = "appid";
-    public static final String APP_SECRET = "appsecret";
-    public static final String TOKEN = "your token";
-    /**
      * 请求消息类型
      */
     // 文本
