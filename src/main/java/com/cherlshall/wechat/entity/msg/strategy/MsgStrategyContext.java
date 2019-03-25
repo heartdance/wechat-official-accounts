@@ -1,7 +1,5 @@
 package com.cherlshall.wechat.entity.msg.strategy;
 
-import com.cherlshall.wechat.entity.msg.strategy.MsgStrategy;
-
 import java.util.Map;
 
 public class MsgStrategyContext {

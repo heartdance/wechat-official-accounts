@@ -1,6 +1,5 @@
 package com.cherlshall.wechat.entity.msg.strategy;
 
-import com.cherlshall.wechat.entity.msg.strategy.*;
 import com.cherlshall.wechat.util.wechat.WeChatConstant;
 
 import java.util.Map;
