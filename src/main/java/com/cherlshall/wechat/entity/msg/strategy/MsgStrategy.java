@@ -1,4 +1,4 @@
-package com.cherlshall.wechat.entity.msg;
+package com.cherlshall.wechat.entity.msg.strategy;
 
 import java.util.Map;
 

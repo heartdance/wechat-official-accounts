@@ -1,12 +1,13 @@
-package com.cherlshall.wechat.entity.msg;
+package com.cherlshall.wechat.entity.msg.strategy;
 
+import com.cherlshall.wechat.entity.msg.strategy.*;
 import com.cherlshall.wechat.util.wechat.WeChatConstant;
 
 import java.util.Map;
 
-class MsgStrategyFactory {
+public class MsgStrategyFactory {
 
-    static MsgStrategy getReceiveMsg(Map<String, String> requestMap) {
+    public static MsgStrategy getReceiveMsg(Map<String, String> requestMap) {
         String type = requestMap.get(WeChatConstant.MSG_TYPE);
         switch (type) {
             case WeChatConstant.REQ_MESSAGE_TYPE_TEXT:

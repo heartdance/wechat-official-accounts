@@ -3,7 +3,7 @@ package com.cherlshall.wechat.config;
 /**
  * 图灵机器人的配置参数
  */
-public class TulingConfig {
+public class TuringConfig {
     /**
      * 图灵请求接口
      */
