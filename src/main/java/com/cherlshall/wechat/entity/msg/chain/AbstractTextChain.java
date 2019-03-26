@@ -6,7 +6,7 @@ import java.util.Map;
 
 public abstract class AbstractTextChain {
 
-    private AbstractTextChain next;
+    protected AbstractTextChain next;
     private String[] keywords;
 
     public AbstractTextChain(String... keywords) {
