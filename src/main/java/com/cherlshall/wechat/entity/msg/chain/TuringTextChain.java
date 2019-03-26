@@ -10,6 +10,11 @@ import com.cherlshall.wechat.util.wechat.WeChatConstant;
 import java.util.Map;
 
 public class TuringTextChain extends AbstractTextChain {
+
+    public TuringTextChain() {
+        super("");
+    }
+
     public TuringTextChain(String... keywords) {
         super(keywords);
     }

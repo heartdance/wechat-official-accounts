@@ -9,6 +9,10 @@ import java.util.Map;
 
 public class BaiduTextChain extends AbstractTextChain {
 
+    public BaiduTextChain() {
+        super("汪", "百度", "baidu");
+    }
+
     public BaiduTextChain(String... keywords) {
         super(keywords);
     }

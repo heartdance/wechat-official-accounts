@@ -9,6 +9,10 @@ import java.util.Map;
 
 public class TencentTextChain extends AbstractTextChain {
 
+    public TencentTextChain() {
+        super("喵", "腾讯", "tencent");
+    }
+
     public TencentTextChain(String... keywords) {
         super(keywords);
     }

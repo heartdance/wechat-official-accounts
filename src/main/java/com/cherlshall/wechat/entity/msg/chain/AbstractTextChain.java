@@ -9,7 +9,7 @@ public abstract class AbstractTextChain {
     private AbstractTextChain next;
     private String[] keywords;
 
-    public AbstractTextChain(String[] keywords) {
+    public AbstractTextChain(String... keywords) {
         this.keywords = keywords;
     }
 
@@ -24,7 +24,7 @@ public abstract class AbstractTextChain {
             }
         }
         // 交给下一个责任接收者处理 如果没有下一个 则交给图灵机器人处理
-        return next != null ? next.sendMsg(requestMap) : new TuringTextChain("").send(requestMap);
+        return next != null ? next.sendMsg(requestMap) : new TuringTextChain().send(requestMap);
     }
 
     abstract protected String send(Map<String, String> requestMap);

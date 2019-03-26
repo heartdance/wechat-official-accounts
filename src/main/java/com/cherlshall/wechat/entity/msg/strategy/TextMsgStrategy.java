@@ -14,8 +14,8 @@ public class TextMsgStrategy implements MsgStrategy {
     @Override
     public String execute(Map<String,String> requestMap) {
         // 拼装责任链
-        AbstractTextChain tencentChain = new TencentTextChain("喵", "腾讯", "tencent");
-        AbstractTextChain baiduChain = new BaiduTextChain("汪", "百度", "baidu");
+        AbstractTextChain tencentChain = new TencentTextChain();
+        AbstractTextChain baiduChain = new BaiduTextChain();
         tencentChain.setNext(baiduChain);
         // 交给责任链执行
         return tencentChain.sendMsg(requestMap);
