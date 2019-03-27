@@ -3,7 +3,8 @@
 1. IntelliJ IDEA 2018.3.2 x64 + lombok插件
 2. JAVA 8
 3. apache-maven-3.6.0
-4. tomcat 9.0
+4. tomcat 9.0.16
+5. mysql 8.0.15
 ## 使用步骤
 1. clone或download
 2. 修改applicatin.yml文件中的mysql配置
