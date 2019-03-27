@@ -25,6 +25,8 @@ public class SubscribeMsgStrategy implements MsgStrategy {
             } catch (Exception e) {
                 return SendUtil.sendTextMsg(requestMap, "回来了老弟？");
             }
+        } else {
+            return SendUtil.sendTextMsg(requestMap, "回来了老弟？");
         }
         return SendUtil.sendTextMsg(requestMap, "谢谢您的关注！获得10金钱！");
     }

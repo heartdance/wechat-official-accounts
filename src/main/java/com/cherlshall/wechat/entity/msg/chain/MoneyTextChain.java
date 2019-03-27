@@ -1,8 +1,6 @@
 package com.cherlshall.wechat.entity.msg.chain;
 
-import com.cherlshall.wechat.entity.mysql.Npc;
 import com.cherlshall.wechat.entity.mysql.User;
-import com.cherlshall.wechat.mapper.NpcMapper;
 import com.cherlshall.wechat.mapper.UserMapper;
 import com.cherlshall.wechat.util.sql.MapperUtil;
 import com.cherlshall.wechat.util.wechat.SendUtil;
@@ -25,7 +23,6 @@ public class MoneyTextChain extends AbstractTextChain {
         MapperUtil mapperUtil = MapperUtil.getInstance();
         UserMapper userMapper = mapperUtil.getUserMapper();
         User user = userMapper.getUserByOpenId(requestMap.get(WeChatConstant.FROM_USER_NAME));
-        Double money = user.getMoney();
-        return SendUtil.sendTextMsg(requestMap, "你剩余金钱：" + money);
+        return SendUtil.sendTextMsg(requestMap, "你剩余金钱：" + user.getMoney());
     }
 }

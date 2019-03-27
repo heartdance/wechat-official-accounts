@@ -22,7 +22,6 @@ public class HpTextChain extends AbstractTextChain {
         MapperUtil mapperUtil = MapperUtil.getInstance();
         NpcMapper npcMapper = mapperUtil.getNpcMapper();
         Npc npc = npcMapper.getNpcById(1);
-        Integer hp = npc.getHp();
-        return SendUtil.sendTextMsg(requestMap, "周建云剩余血量：" + hp);
+        return SendUtil.sendTextMsg(requestMap, "周建云剩余血量：" + npc.getHp());
     }
 }
